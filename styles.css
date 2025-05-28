@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light greyish blue background */
+    color: #333;
+}
+
+header {
+    background: #4F46E5; /* Indigo/purple background */
+    color: #fff;
+    padding: 25px 5%; /* Adjusted padding */
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #e0e7ff;
+}
+    
+h1, h2, h3 {
+    color: #1f2937; /* Darker grey for headings */
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Space between nav and content */
+    align-items: flex-start; /* Align items to the top */
+}
+
+nav {
+    width: 280px; /* Width of the navigation panel */
+    min-width: 220px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky; /* Makes the navigation sticky */
+    top: 20px; /* Distance from the top of the viewport */
+    align-self: flex-start;
+    max-height: calc(100vh - 40px); /* Max height, considering top offset */
+    overflow-y: auto; /* Add scroll if content is too long */
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #4F46E5; /* Purple color for "Course Topics" */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #374151; /* Dark gray text */
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav li a:hover {
+    background-color: #e0e7ff; /* Lighter purple for hover */
+    color: #3730a3; /* Darker purple text for hover */
+}
+
+nav li a.active {
+    background-color: #4F46E5; /* Purple background for active item */
+    color: #fff; /* White text for active item */
+}
+
+.content-area {
+    flex: 1; /* Takes remaining space */
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+    
+.topic {
+    margin-bottom: 30px;
+}
+
+.topic h2 { /* Styling for main topic titles like "I. Counting" */
+    font-size: 1.6em;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.topic h3 { /* Styling for sub-topic titles */
+    font-size: 1.2em;
+    color: #374151;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-left: 0; /* Adjusted from 20px, content-area provides padding */
+    padding-left: 15px;
+    border-left: 3px solid #e0e7ff;
+}
+    
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer {
+    background: #111827; /* Dark background for footer */
+    color: #9CA3AF; /* Lighter text color for footer */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px; /* Space above footer */
+}
