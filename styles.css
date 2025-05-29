@@ -137,3 +137,37 @@ footer {
     text-align: center;
     margin-top: 30px; 
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 150px 20px 20px; 
+    }
+
+    nav {
+        margin: auto;
+        width:90%;
+        position: static; 
+        max-height: none; 
+        margin-bottom: 10px; 
+        top: auto; 
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .main-container {
+        padding: 150px 20px 20px;
+    }
+
+    footer {
+        font-size: 75%;
+    }
+}
