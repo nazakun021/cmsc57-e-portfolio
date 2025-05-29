@@ -62,6 +62,7 @@ nav h2 {
     margin-bottom: 15px;
     font-size: 1.4em;
     color: #4F46E5; 
+    padding-left: 10px;
 }
 
 nav ul {
@@ -101,6 +102,7 @@ nav li a.active {
     
 .topic {
     margin-bottom: 30px;
+    scroll-margin-top: 150px; /* Added to offset for the fixed header */
 }
 
 .topic h2 { 
